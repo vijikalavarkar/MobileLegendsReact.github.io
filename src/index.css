@@ -1,0 +1,211 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    color: #fff;
+    font-size: 20px;
+    overflow-x: hidden;
+    font-family: 'Flamenco', cursive;
+}
+
+header
+{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('MobileLegends.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.row
+{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+.logo
+{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+
+
+.main-nav
+{
+    float: right;
+    margin-top: 60px;
+}
+
+
+
+.main-nav li
+{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    
+}
+
+.main-nav li a:hover
+{
+    border-bottom: 2px solid #bf55ec;
+}
+
+.main-nav a
+{
+    padding: 5px 0px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+    
+}
+
+.clearfix:after 
+{
+    content: '.';
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+
+
+.main-content-header
+{
+    width: 1180px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+h1
+{
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.btn
+{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+
+
+.btn-full
+{
+    background-color: transparent;
+    color:#bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+}
+
+.btn-full:hover
+{
+    background-color: #fff;
+}
+
+
+.btn-more
+{
+    background-color: transparent;
+    color:#fff;
+    margin-right: 15px;
+    border: 1px solid #fff;
+}
+
+.btn-more:hover
+{
+    background-color: #bf55ec;
+}
+
+
+
+
+.blink
+{
+    animation: colochange 1s infinite;
+}
+
+@keyframes colochange 
+{
+    /* 0%{color: red;}
+    15%{color:#ff8000} 
+    0%{color: #bf55ec;}
+    50%{color: #fff;}
+    100%{color: blue;}  */
+    0%{color: white;}
+    25%{color: #bf55ec;}
+    50%{color: lightblue;}
+    100%{color: lightseagreen;}
+}
+
+
+@media only screen and (max-width: 1180px)
+{
+    .main-content-header
+    {
+        width: 100%;
+        padding: 0 2%;
+    }
+};
+
+
+@media only screen and (max-width: 998px)
+{
+    h1
+    {
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{ 
+    h1
+    {
+        font-size: 180%;
+    }
+
+    .main-nav
+    {
+        display: none;
+    }
+}
